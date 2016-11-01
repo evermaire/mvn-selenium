@@ -9,8 +9,8 @@ import java.io.File;
 import java.io.IOException;
 
 public class TestIT {
-  private static final String WEBPAGE = "http://www.google.com";
-  private static final String TITLE = "Google";
+  private static final String WEBPAGE = "https://apex.oracle.com/pls/apex/f?p=92029";
+  private static final String TITLE = "jQuery Mobile - Log In";
   private WebDriver driver;
 
   @BeforeSuite
