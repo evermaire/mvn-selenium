@@ -2,6 +2,7 @@ package nl.evrm.webdriver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import java.io.File;
@@ -15,7 +16,8 @@ public class TestIT {
 
   @BeforeSuite
   public void creatDriver(){
-    this.driver= new HtmlUnitDriver(true);
+    //this.driver= new HtmlUnitDriver(true);
+    this.driver = new FirefoxDriver();
   }
 
   @Test
