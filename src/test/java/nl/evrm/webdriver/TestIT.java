@@ -20,7 +20,7 @@ public class TestIT {
      //this.driver= new HtmlUnitDriver(true);
      //this.driver = new FirefoxDriver();
      ChromeOptions options = new ChromeOptions();
-     options.setBinary("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe");
+     options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
      this.driver = new ChromeDriver(options);
      
   }
