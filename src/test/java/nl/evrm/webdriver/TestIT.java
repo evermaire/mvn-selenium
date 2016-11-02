@@ -22,7 +22,7 @@ public class TestIT {
      //this.driver = new FirefoxDriver();
      System.setProperty("webdriver.chrome.driver", "C:\\Tools\\chromedriver.exe");
      ChromeOptions options = new ChromeOptions();
-     options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+     //options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
      options.addArguments("start-maximized");
      this.driver = new ChromeDriver(options);
      
