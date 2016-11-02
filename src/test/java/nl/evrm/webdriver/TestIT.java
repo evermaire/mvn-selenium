@@ -3,6 +3,7 @@ package nl.evrm.webdriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import java.io.File;
@@ -16,19 +17,20 @@ public class TestIT {
 
   @BeforeSuite
   public void creatDriver(){
-    //this.driver= new HtmlUnitDriver(true);
-    this.driver = new FirefoxDriver();
+     //this.driver= new HtmlUnitDriver(true);
+     //this.driver = new FirefoxDriver();
+     this.driver = new ChromeDriver();
   }
 
   @Test
   public void getLoginPageWithHTMLUNIT() throws IOException, InterruptedException {
-      driver.get(WEBPAGE);
-      System.out.println("TITLE IS ==>\""+driver.getTitle()+"\"");
-    Assert.assertEquals(driver.getTitle(), TITLE);
+     driver.get(WEBPAGE);
+     System.out.println("TITLE IS ==>\""+driver.getTitle()+"\"");
+     Assert.assertEquals(driver.getTitle(), TITLE);
   }
 
   @AfterSuite
   public void closeDriver(){
-    driver.close();
+     driver.close();
   }
 }
