@@ -23,7 +23,7 @@ public class TestIT {
      System.setProperty("webdriver.chrome.driver", "C:\\Tools\\chromedriver.exe");
      ChromeOptions options = new ChromeOptions();
      //options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-     options.addArguments("start-maximized");
+     options.addArguments("--start-maximized");
      this.driver = new ChromeDriver(options);
      
   }
