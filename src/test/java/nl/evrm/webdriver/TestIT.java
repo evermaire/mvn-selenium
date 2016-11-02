@@ -31,12 +31,15 @@ public class TestIT {
   @Test
   public void getLoginPageWithHTMLUNIT() throws IOException, InterruptedException {
      driver.get(WEBPAGE);
-     System.out.println("TITLE IS ==>\""+driver.getTitle()+"\"");
+     System.out.println("Maximize the window.");
+     driver.manage().window().maximize();
+     System.out.println("TITLE IS ==>\"" + driver.getTitle() + "\"");
      Assert.assertEquals(driver.getTitle(), TITLE);
   }
 
   @AfterSuite
   public void closeDriver(){
      driver.close();
+     driver.quit();
   }
 }
